@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xu</groupId>
     <artifactId>closed_source_aar</artifactId>
-    <version>1.5</version>
+    <version>1.6</version>
     <packaging>aar</packaging>
     <build>
         <plugins>
@@ -36,7 +36,7 @@
     <scm>
         <connection>https://github.com/Mintegral-official/MintegralAdSDK-Android.git</connection>
         <developerConnection>https://github.com/Mintegral-official/MintegralAdSDK-Android.git</developerConnection>
-        <url>http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-android&lang=cn</url>
+        <url>http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-android&amp;lang=cn</url>
     </scm>
  <!-- Mintegral SDK 相关 -->
     <repositories>
