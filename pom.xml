@@ -1,50 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.xu</groupId>
-  <artifactId>closed_source_aar</artifactId>
-  <version>1.1</version>
-  <packaging>aar</packaging>
-  <build>
-      <plugins>
-        <plugin>
-          <groupId>com.simpligility.maven.plugins</groupId>
-          <artifactId>android-maven-plugin</artifactId>
-          <version>4.1.0</version>
-          <extensions>true</extensions>
-          <configuration>
-            <encoding>utf8</encoding>
-            <source>1.8</source>
-            <target>1.8</target>
-            <sign>
-              <debug>false</debug>
-            </sign>
-          </configuration>
-        </plugin>
-      </plugins>
+<project
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xu</groupId>
+    <artifactId>closed_source_aar</artifactId>
+    <version>1.1</version>
+    <packaging>aar</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.1.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <encoding>utf8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <sign>
+                        <debug>false</debug>
+                    </sign>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-  <repositories>
+    <repositories>
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+         <repository>
+            <id>mintegral-repo</id>
+            <url>https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea</url>
+        </repository>
     </repositories>
-  <dependencies>
-           <dependency>
+    <dependencies>
+        <dependency>
             <groupId>com.applovin</groupId>
             <artifactId>applovin-sdk</artifactId>
             <version>12.5.0</version>
         </dependency>
-  <dependency>
-        <groupId>androidx.appcompat</groupId>
-        <artifactId>appcompat</artifactId>
-        <version>1.6.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.android.material</groupId>
-        <artifactId>material</artifactId>
-        <version>1.10.0</version>
-      </dependency>
-  </dependencies>
+        <dependency>
+            <groupId>androidx.appcompat</groupId>
+            <artifactId>appcompat</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+         <!-- Mintegral SDK dependencies -->
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>mbbanner</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>mbnative</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>mbnativeadvanced</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>mbbid</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>mbsplash</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbridge.msdk.oversea</groupId>
+            <artifactId>newinterstitial</artifactId>
+            <version>16.6.71</version>
+        </dependency>
+        <!-- Mintegral SDK dependencies -->
+    </dependencies>
 </project>
